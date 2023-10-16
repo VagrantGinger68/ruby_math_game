@@ -1,4 +1,5 @@
 class Question
+  attr_reader :question, :answer
 
   def initialize
     @num1 = rand(1..20)
@@ -12,3 +13,9 @@ class Question
   end
 
 end
+
+question1 = Question.new
+puts question1.question
+puts question1.answer
+puts question1.correct?(question1.answer)
+puts question1.correct?(4)
