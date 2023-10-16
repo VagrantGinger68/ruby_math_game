@@ -4,7 +4,7 @@ class Question
   def initialize
     @num1 = rand(1..20)
     @num2 = rand(1..20)
-    @question = "What is #{@num1} + #{@num2}"
+    @question = "What is #{@num1} + #{@num2}?"
     @answer = @num1 + @num2
   end
 
@@ -13,9 +13,3 @@ class Question
   end
 
 end
-
-question1 = Question.new
-puts question1.question
-puts question1.answer
-puts question1.correct?(question1.answer)
-puts question1.correct?(4)

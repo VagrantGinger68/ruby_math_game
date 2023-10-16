@@ -14,10 +14,3 @@ class Player
     "#{name}: #{lives} lives"
   end
 end
-
-player1 = Player.new("Player 1")
-puts player1.display_score
-player1.decrease_life
-puts player1.display_score
-player1.decrease_life
-puts player1.display_score
